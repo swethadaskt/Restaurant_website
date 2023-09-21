@@ -1,0 +1,398 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'sans-serif' , 'Montserrat';
+    color: black;
+    
+}
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 600px;
+    align-items: center;
+    color: white;
+}
+.hed{
+    color: white;
+    margin-left: 700px;
+    margin-top: 150px;
+}
+.h{
+    color: white;
+}
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+    scroll-behavior: smooth;
+}
+.links{
+    text-align: none;
+    font-weight: bold;
+}
+.links :hover
+{
+    color: yellow;
+}
+#home{
+    margin: 7% 20% 0px 28%;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.hed{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.h{
+    margin-left: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+}
+.title-img{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    background: center;
+}
+.title-img img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-30%);
+    transition: bottom 1s,left 2s;
+}
+
+#about{
+    margin: 10% 8% opx 8%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+#about h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.heading{
+    text-align: center;
+}
+
+.about_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+}
+.about_col{
+    flex: 1;
+}
+.about_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+}
+.about_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+.about_col h1{
+    text-align: center;
+    font-family: cursive;
+    color: #000000;
+}
+.about_col p{
+    text-align: justify;
+    font-weight: bold;
+    color: #000000;
+}
+
+.or{
+    padding: 50px;
+    margin-left: 400px;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.h{
+    margin-left: 120px;
+}
+.home_btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: rgb(255, 180, 145);
+    padding: 8px 10px;
+    margin:  350px;
+    margin-left: 900px;
+    transition: 0.3s;
+}
+#menu{
+    width: 100%;
+    padding: 70px 0;
+   
+
+    
+}
+#menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+#menu .menu_box .menu_card{
+    width: 325px;
+    height: 400px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+#menu .menu_box .menu_card .menu_image:hover img{
+     transform: scale(1.1);
+     
+}
+#menu .menu_box .menu_card .small_card{
+      width: 45px;
+      height: 45px;
+      float: right;
+      position: relative;
+      top: -240px;
+      right: -8px;
+      opacity: 0;
+      border-radius: 7px;
+      transition: 0.3s;
+}
+#menu .menu_box .menu_card:hover .small_card{
+       position: relative;
+       top: -240px;
+       right: 20px;
+       opacity: 1;
+       
+}
+#menu .menu_box .menu_card:hover .small_card i{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: 50px;
+  line-height: 50px;
+  color: rgb(255, 253, 253);
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+#menu .menu_box .menu_card:hover .small_card i:hover{
+color: rgb(255, 0, 0);
+
+}
+#menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 20px;
+}
+#menu .menu_box .menu_card .menu_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px
+}
+#menu .menu_box .menu_card .menu_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+#menu .menu_box .menu_card .menu_info .menu_icon{
+    color: yellow;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+#menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 8px 10px;
+    margin:  0 80px;
+    transition: 0.3s;
+}
+
+
+.icon-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.icon i{
+    font-size: 30px;
+
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, rgb(60, 73, 28), rgb(122, 240, 75));
+}
+.icon:hover i{
+    color: rgb(152, 164, 175);
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+header{
+    background-image: url(./home_img.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+#team{
+    width: 100%;
+    height: 90vh;
+    
+}
+#team h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}    
+#team .team_box .profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 5);
+    transition: 0.4s;
+
+}
+#team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 320px;
+
+
+}
+#team .team_box .profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow:  0 0 8px rgba(0, 0, 0, 5) ;
+    z-index: 2;
+    transition: 0.4s;
+}
+#team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+#team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+#team .team_box .profile:hover .info{
+    top: 60%;
+}
+#team .team_box .profile .info .name{
+    margin-bottom: 15px;
+
+
+}
+#team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
